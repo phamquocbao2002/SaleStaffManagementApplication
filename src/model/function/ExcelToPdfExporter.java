@@ -100,16 +100,10 @@ public class ExcelToPdfExporter {
 
 	private static float[] calculateColumnWidths(HSSFSheet sheet, int maxColumns) {
 		float[] columnWidths = new float[maxColumns];
-		float totalWidth = 0f;
 
 		for (int c = 0; c < maxColumns; c++) {
 			columnWidths[c] = sheet.getColumnWidth(c) / 256f;
-			totalWidth += columnWidths[c];
 		}
-
-//		for (int c = 0; c < maxColumns; c++) {
-//			columnWidths[c] = (columnWidths[c] / totalWidth) * 100;
-//		}
 		return columnWidths;
 	}
 
@@ -152,12 +146,5 @@ public class ExcelToPdfExporter {
 		default:
 			return Element.ALIGN_MIDDLE;
 		}
-	}
-
-	public static void main(String[] args) {
-		String sourceFile = "C://Users//Admin//eclipse-workspace//quanlynhanvienkinhdoanh_origin//file_exporter//phieuxuatkho.xls";
-		String destinationFile = "C://Users//Admin//eclipse-workspace//quanlynhanvienkinhdoanh_origin//file_exporter//phieuxuatkho.pdf";
-
-		new ExcelToPdfExporter().exportExcelToPdf(sourceFile, destinationFile);
 	}
 }
