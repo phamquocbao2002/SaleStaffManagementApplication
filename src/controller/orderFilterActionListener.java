@@ -42,7 +42,7 @@ public class orderFilterActionListener implements ActionListener {
 	                List<order> orders = get();
 	                ovp.displayData(orders);
 	                fileExportActionListener fel = (fileExportActionListener) ovp.exportFileBtn.getActionListeners()[0];
-	        		fel.data.set(0, conditions);
+	        		fel.fe.data.set(0, conditions);
 	            } catch (Exception e) {
 	                e.printStackTrace();
 	            } finally {

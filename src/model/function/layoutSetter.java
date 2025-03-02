@@ -1,12 +1,9 @@
 package model.function;
 
 import java.io.File;
-import java.util.Collections;
-import java.util.Comparator;
 import java.util.List;
 import javax.swing.SwingWorker;
 import javax.swing.table.DefaultTableModel;
-import javax.swing.table.TableModel;
 
 import jxl.Cell;
 import jxl.Sheet;
@@ -79,7 +76,6 @@ public class layoutSetter {
 
 		        @Override
 		        protected void done() {
-		        	
 		            try {
 		            	hw.main_view_panel.removeAll();
 		        		customerViewPanel cvp = new customerViewPanel(hw);
@@ -93,8 +89,6 @@ public class layoutSetter {
 		        			cvp.customers_listing_table.setValueAt(customer.getAddress(), customers.indexOf(customer), 2);
 		        			cvp.customers_listing_table.setValueAt(customer.getStaff().getName(), customers.indexOf(customer), 3);
 		        		}
-		        		
-
 		            } catch (Exception e) {
 		                e.printStackTrace();
 		            } finally {
@@ -102,14 +96,10 @@ public class layoutSetter {
 		            }
 		        }
 		    };
-
-		    
 		    new Thread(() -> {
 		        message.setVisible(true);
 		    }).start();
-
 		    worker.execute(); 
-
 	}
 
 	public void setOrderPanelLayout() {

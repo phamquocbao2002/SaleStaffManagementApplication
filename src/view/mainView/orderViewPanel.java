@@ -35,16 +35,13 @@ import model.entity.order;
 import view.subView.receiptDetailFr;
 
 public class orderViewPanel extends JFrame {
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
 	public homeWindow hw;
 	private GroupLayout hw_layout;
 	public JTextField startTime;
 	public JComboBox<String> salesfaff_filter;
 	private JTable dataTable;
-	private List<order> data = new ArrayList<>();;
+	private List<order> data = new ArrayList<>();
 	public JTextField endTime;
 	public JButton exportFileBtn;
 
@@ -191,7 +188,7 @@ public class orderViewPanel extends JFrame {
 	public void displayData(List<order> data) {
 		this.data = data;
 		fileExportActionListener fel = (fileExportActionListener) this.exportFileBtn.getActionListeners()[0];
-		fel.data.set(1, data);
+		fel.fe.data.set(1, data);
 		DefaultTableModel model = (DefaultTableModel) dataTable.getModel();
 		model.setRowCount(data.size());
 		Collections.sort(data,
