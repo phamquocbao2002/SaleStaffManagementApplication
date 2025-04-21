@@ -1,4 +1,4 @@
-package model.function;
+package utils;
 
 import java.text.DecimalFormat;
 import java.text.DecimalFormatSymbols;

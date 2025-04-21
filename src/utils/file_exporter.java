@@ -1,4 +1,4 @@
-package model.function;
+package utils;
 
 import java.io.File;
 import java.io.IOException;
@@ -8,7 +8,6 @@ import java.nio.file.StandardCopyOption;
 import java.util.List;
 
 import javax.swing.JFileChooser;
-import javax.swing.JOptionPane;
 import javax.swing.SwingUtilities;
 import javax.swing.SwingWorker;
 import javax.swing.filechooser.FileNameExtensionFilter;

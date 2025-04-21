@@ -16,7 +16,7 @@ import javax.swing.JTable;
 import javax.swing.GroupLayout.Alignment;
 import javax.swing.table.DefaultTableModel;
 
-import model.function.float_1;
+import utils.float_1;
 import view.subView.productAddingFr;
 import view.subView.productDetailFr;
 public class productViewPanel {

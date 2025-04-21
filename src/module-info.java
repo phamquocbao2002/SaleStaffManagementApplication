@@ -9,7 +9,7 @@ module quanlykinhdoanh {
     requires jxl;       
     requires itextpdf;
 	requires poi;
-	requires aspose.cells;
+    requires aspose.cells;
 
-    opens model.function to java.desktop;
+    opens utils to java.desktop;
 }

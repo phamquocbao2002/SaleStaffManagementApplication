@@ -3,9 +3,6 @@ package view.mainView;
 import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
-import java.io.File;
 
 import javax.swing.GroupLayout;
 import javax.swing.JButton;
@@ -19,11 +16,6 @@ import javax.swing.table.DefaultTableModel;
 
 import controller.ImportEmployeeDataListener;
 import controller.employeesTableMouseListener;
-import jxl.Sheet;
-import jxl.Workbook;
-import jxl.WorkbookSettings;
-import view.mainView.homeWindow;
-import view.subView.employeeDetailInfoFr;
 import view.subView.newEmployeeAddingFr;
 
 

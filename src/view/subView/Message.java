@@ -1,8 +1,6 @@
 package view.subView;
 
 import java.awt.BorderLayout;
-
-import javax.swing.JDialog;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.SwingConstants;

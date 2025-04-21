@@ -22,8 +22,8 @@ import jxl.write.WritableWorkbook;
 import jxl.write.WriteException;
 import model.entity.order;
 import model.entity.product;
-import model.function.file_exporter;
-import model.function.float_1;
+import utils.file_exporter;
+import utils.float_1;
 
 import javax.swing.JButton;
 import java.awt.event.ActionListener;

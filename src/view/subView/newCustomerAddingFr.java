@@ -20,7 +20,7 @@ import jxl.write.WritableSheet;
 import jxl.write.WritableWorkbook;
 import jxl.write.WriteException;
 import model.entity.employee;
-import model.function.*;
+import utils.*;
 
 import javax.swing.JTextField;
 import javax.swing.JButton;

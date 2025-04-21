@@ -1,4 +1,4 @@
-package model.function;
+package utils;
 
 public class substringchecker {
 

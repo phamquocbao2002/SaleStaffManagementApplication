@@ -24,8 +24,8 @@ import jxl.write.Label;
 import jxl.write.WritableSheet;
 import jxl.write.WritableWorkbook;
 import jxl.write.WriteException;
-import model.function.float_1;
-import model.function.substringchecker;
+import utils.float_1;
+import utils.substringchecker;
 
 import java.awt.event.ActionListener;
 import java.io.File;
